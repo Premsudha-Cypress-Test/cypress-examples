@@ -1,0 +1,46 @@
+[
+    {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "expectedUrl": "/inventory.html",
+      "expectedError": ""
+    },
+    {
+      "username": "invalidusername",
+      "password": "secret_sauce123",
+      "expectedUrl": "",
+      "expectedError": "Username and password do not match any user in this service"
+    },
+    {
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "expectedUrl": "",
+      "expectedError2": "Sorry, this user has been locked out"
+    },
+    {
+        "username": "problem_user",
+        "password": "secret_sauce",
+        "expectedUrl": "/inventory.html",
+        "expectedError": ""
+      },
+    {
+      "username": "performance_glitch_user",
+      "password": "secret_sauce",
+      "expectedUrl": "/inventory.html",
+      "expectedError": "",
+      "delay": 3500
+    },
+    {
+        "username": "error_user",
+        "password": "secret_sauce",
+        "expectedUrl": "/inventory.html",
+        "expectedError": ""
+      },
+      {
+        "username": "visual_user",
+        "password": "secret_sauce",
+        "expectedUrl": "/inventory.html",
+        "expectedError": ""
+      }
+  ]
+  
